@@ -1,7 +1,7 @@
 import { type ReactElement } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { HomePage, LoginPage } from '~/pages';
+import { HomePage, LoginPage, NotFoundPage } from '~/pages';
 import { PATHS } from '~/shared';
 
 import ProtectedRoute from './protected-route';
@@ -17,6 +17,10 @@ const AppRouter = (): ReactElement => {
 			<Route
 				path={PATHS.LOGIN}
 				element={<UnprotectedRoute childElement={<LoginPage />} />}
+			/>
+			<Route
+				path={PATHS.NOTFOUND}
+				element={<ProtectedRoute childElement={<NotFoundPage />} />}
 			/>
 		</Routes>
 	);
