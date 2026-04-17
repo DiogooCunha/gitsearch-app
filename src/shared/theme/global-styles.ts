@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   :root {
-    --main-bg-color: #eef2f6;
+    --main-bg-color: #010409;
 
     /* Variáveis do toast */
     --toastify-color-light: #fff;
@@ -18,6 +18,6 @@ export const GlobalStyles = createGlobalStyle`
 
   html, body {
     background-color: var(--main-bg-color);
-
+    color: #fff
   }
 `;

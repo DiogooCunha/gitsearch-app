@@ -1,4 +1,4 @@
-import { toaster } from '~/shared';
+import { toaster, Typography } from '~/shared';
 
 const HomePage = () => {
 	return (
@@ -15,6 +15,7 @@ const HomePage = () => {
 			>
 				CLICK
 			</button>
+			<Typography>Hello</Typography>
 		</div>
 	);
 };
