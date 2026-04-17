@@ -7,14 +7,17 @@ export const GlobalStyles = createGlobalStyle`
     /* Variáveis do toast */
     --toastify-color-light: #fff;
   }
-
+  
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: Figtree, sans-serif
   }
 
   html, body {
     background-color: var(--main-bg-color);
+
   }
 `;
