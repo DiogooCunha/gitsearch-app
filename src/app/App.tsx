@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ToastContainer } from 'react-toastify';
 
 import { GlobalStyles } from '~/shared';
 
@@ -10,6 +11,7 @@ function App() {
 	return (
 		<>
 			<QueryClientProvider client={queryClient}>
+				<ToastContainer />
 				<GlobalStyles />
 				<div>
 					<AppRouter />
