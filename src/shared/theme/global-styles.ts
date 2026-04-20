@@ -3,6 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
   :root {
     --main-bg-color: #010409;
+    --github-green: #238636;
+    --github-green-hovered: #1f7b32;
 
     /* Variáveis do toast */
     --toastify-color-light: #fff;

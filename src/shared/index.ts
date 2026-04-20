@@ -4,3 +4,4 @@ export * from './api';
 export * from './lib';
 export * from './theme';
 export * from './router';
+export * from './assets';

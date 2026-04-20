@@ -2,6 +2,7 @@ import { type ReactElement } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { useUserStore } from '~/entities';
+import { GithubAuth } from '~/features';
 import { PATHS } from '~/shared';
 
 const LoginPage = (): ReactElement => {
@@ -17,6 +18,7 @@ const LoginPage = (): ReactElement => {
 		<div>
 			LoginPage
 			<button onClick={handleLogin}>set</button>
+			<GithubAuth />
 		</div>
 	);
 };

@@ -40,5 +40,6 @@ export const DynamicTypography = styled(
 )<DynamicTypographyProps>`
 	margin: 0;
 	font-family: inherit;
-	${({ $tag = 'span' }) => variants[$tag]}
+	${({ $tag = 'span' }: DynamicTypographyProps) =>
+		variants[$tag as TagVariants]}
 `;
