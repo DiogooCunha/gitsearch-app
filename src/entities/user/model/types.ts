@@ -17,7 +17,7 @@ type UserStoreState = {
 type UserStoreActions = {
 	isUserLoggedIn: () => boolean;
 	setToken: (token: string) => void;
-	loginWithGithub: (code: string) => Promise<void>
+	loginWithGithub: (code: string) => Promise<void>;
 };
 
 export type UserStore = UserStoreState & UserStoreActions;

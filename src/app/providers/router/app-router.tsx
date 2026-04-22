@@ -1,4 +1,4 @@
-import { HomePage, LoginPage } from '~/pages';
+import { HomePage, LoginPage, NotFoundPage } from '~/pages';
 import { PATHS } from '~/shared';
 import { type ReactElement } from 'react';
 import { Route, Routes } from 'react-router-dom';
@@ -15,6 +15,10 @@ const AppRouter = (): ReactElement => {
 			<Route
 				path={PATHS.LOGIN}
 				element={<UnprotectedRoute childElement={<LoginPage />} />}
+			/>
+			<Route
+				path={PATHS.NOTFOUND}
+				element={<UnprotectedRoute childElement={<NotFoundPage />} />}
 			/>
 		</Routes>
 	);
