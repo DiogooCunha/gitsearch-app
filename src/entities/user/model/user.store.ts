@@ -1,7 +1,7 @@
+import { request } from '~/shared';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { initialUser, type UserStore } from './types';
-import { request } from '~/shared';
 
 // Toda entidade, se necessário, deve ter sua própria store,
 // estados globais devem ser tratados na sessionStore
@@ -31,12 +31,11 @@ const useUserStore = create<UserStore>()(
 					set(() => ({
 						token: {
 							accessToken: res.data.access_token,
-						}
-					}))
+						},
+					}));
 				} catch (error) {
 					throw error;
 				}
-
 			},
 		}),
 		// Nessa parte voçês vao botar as propriedades que precisam ser persistidas,

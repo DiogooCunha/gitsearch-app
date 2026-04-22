@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Button = styled.button({
 	marginTop: '40px',
@@ -34,6 +34,6 @@ const Button = styled.button({
 		transform: 'translateY(0)',
 		boxShadow: '0 0 6px rgba(52, 212, 157, 0.3)',
 	},
-})
+});
 
 export default Button;
