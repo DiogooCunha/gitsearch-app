@@ -1,5 +1,4 @@
 import { Avatar } from '@ark-ui/react';
-
 import { Root } from './styles';
 
 type StatusBallProps = {

@@ -1,6 +1,5 @@
-import type { ComponentType, SVGProps } from 'react';
-
 import { Info } from 'lucide-react';
+import type { ComponentType, SVGProps } from 'react';
 
 export type SidebarItem = {
 	name: string;

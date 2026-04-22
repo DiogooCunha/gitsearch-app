@@ -1,5 +1,4 @@
 import { useQuery } from '@tanstack/react-query';
-
 import { userApi } from '../api';
 
 // useQuery é pra request que BUSCAM data

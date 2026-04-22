@@ -1,9 +1,8 @@
-import { type ReactElement } from 'react';
-import { useNavigate } from 'react-router-dom';
-
 import { useUserStore } from '~/entities';
 import { GithubAuth } from '~/features';
 import { PATHS } from '~/shared';
+import { type ReactElement } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = (): ReactElement => {
 	const setToken = useUserStore((state) => state.setToken);

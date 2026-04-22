@@ -3,7 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 
 import { HomePage, LoginPage, NotFoundPage } from '~/pages';
 import { PATHS } from '~/shared';
-
+import { type ReactElement } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import ProtectedRoute from './protected-route';
 import UnprotectedRoute from './unprotected-route';
 

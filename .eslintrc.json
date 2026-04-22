@@ -20,7 +20,7 @@
 		"boundaries/elements": [
 			{
 				"type": "app",
-				"pattern": "app"
+				"pattern": "src/app"
 			},
 			{
 				"type": "pages",
@@ -29,22 +29,22 @@
 			},
 			{
 				"type": "widgets",
-				"pattern": "widgets/*",
+				"pattern": "src/widgets/*",
 				"capture": ["widget"]
 			},
 			{
 				"type": "features",
-				"pattern": "features/*",
+				"pattern": "src/features/*",
 				"capture": ["feature"]
 			},
 			{
 				"type": "entities",
-				"pattern": "entities/*",
+				"pattern": "src/entities/*",
 				"capture": ["entity"]
 			},
 			{
 				"type": "shared",
-				"pattern": "shared/*",
+				"pattern": "src/shared/*",
 				"capture": ["segment"]
 			}
 		]
