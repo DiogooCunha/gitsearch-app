@@ -1,8 +1,6 @@
-import type { createUserTodoBody } from '../model';
-
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-
 import { userApi } from '../api';
+import type { createUserTodoBody } from '../model';
 
 export const useCreateUserTodo = (userTodo: createUserTodoBody) => {
 	const queryClient = useQueryClient();

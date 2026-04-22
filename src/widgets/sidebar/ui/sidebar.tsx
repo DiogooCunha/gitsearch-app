@@ -1,5 +1,4 @@
 import { Divider } from '~/shared';
-
 import { sidebarItems } from '../model/items';
 import { Title, Wrapper } from './styles';
 

@@ -1,9 +1,6 @@
-import type { TagVariants } from '.';
-import type { ComponentProps } from 'react';
-
-import { createElement } from 'react';
-
+import { createElement, type ComponentProps } from 'react';
 import styled, { css } from 'styled-components';
+import type { TagVariants } from '.';
 
 type DynamicTypographyProps = {
 	$tag?: TagVariants;

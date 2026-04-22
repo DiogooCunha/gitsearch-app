@@ -1,9 +1,9 @@
 import axios from 'axios';
-
 import { successResponse } from './interceptors';
+import { BASE_PATH } from '../config';
 
 const request = axios.create({
-	//baseURL: url do back ex: http://localhost:3001
+	baseURL: BASE_PATH,
 	timeout: 30000, // 30 seconds timeout
 });
 

@@ -1,5 +1,4 @@
 import { type CSSProperties, type ReactNode } from 'react';
-
 import { DynamicTypography } from './styles';
 
 export type TagVariants =

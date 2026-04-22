@@ -1,7 +1,5 @@
 import { useGitHubLogin } from '@react-oauth/github';
-
 import { CLIENT_ID, GithubIcon, Typography } from '~/shared';
-
 import { onAuthError } from '../lib/on-error';
 import { onAuthSuccess } from '../lib/on-success';
 import { LoginButton } from './styles';

@@ -1,9 +1,7 @@
-import type { ReactElement } from 'react';
-
-import { Navigate } from 'react-router-dom';
-
 import { useUserStore } from '~/entities';
 import { PATHS } from '~/shared';
+import type { ReactElement } from 'react';
+import { Navigate } from 'react-router-dom';
 
 type UnprotectedRouteProps = {
 	childElement: ReactElement;

@@ -1,6 +1,5 @@
-import type { createUserTodoBody, UserTodo } from '../model';
-
 import { request } from '~/shared';
+import type { createUserTodoBody, UserTodo } from '../model';
 
 export const userApi = {
 	fetchFakeUser: async (id: string): Promise<UserTodo> => {
