@@ -1,5 +1,6 @@
 import type { ComponentProps } from 'react';
 import styled from 'styled-components';
+import { NavLink as RouterNavLink } from 'react-router-dom';
 
 type WrapperProps = {
 	$open?: boolean;
@@ -28,9 +29,19 @@ export const Title = styled.h1<TitleProps>(({ $fontColor }) => ({
 }));
 
 export const Li = styled.div({
-	display: 'flex',
-	alignItems: 'center',
-	gap: '8px',
 	marginTop: '20px',
 	marginLeft: '60px',
+});
+
+export const NavLink = styled(RouterNavLink)({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    textDecoration: 'none',
+    color: 'inherit',
+    padding: '8px 16px',
+    borderRadius: '8px',
+    '&:hover': {
+        backgroundColor: '#3E444C',
+    },
 });

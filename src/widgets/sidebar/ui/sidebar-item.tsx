@@ -1,19 +1,19 @@
-// colocar toda logica aqui
-
 import type { ReactElement } from "react";
-import { sidebarItems } from "../model/items";
-import { Li, Wrapper } from "./styles";
+import { Li, NavLink } from "./styles";
+import type { SidebarItemType } from "../model/items"
 
-const SidebarItem = (): ReactElement => {
+interface SidebarItemProps {
+    item: SidebarItemType;
+}
+
+const SidebarItem = ({ item }: SidebarItemProps): ReactElement => {
     return (
-        <Wrapper $open={true}>
-            {sidebarItems?.map((item, index) => (
-                <Li key={item?.name + index}>
-                    <item.icon width={20} height={20} />
-                    {item?.name}
-                </Li>
-            ))}
-        </Wrapper>
+        <Li>
+            <NavLink to={item.href}>
+                <item.icon width={20} height={20} />
+                {item?.name}
+            </NavLink>
+        </Li>
     );
 };
 
