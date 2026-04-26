@@ -1,5 +1,4 @@
 import { Avatar } from '@ark-ui/react';
-
 import styled from 'styled-components';
 
 type RootProps = {

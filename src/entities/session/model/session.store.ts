@@ -1,7 +1,6 @@
-import type { SessionStore } from './types';
-
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import type { SessionStore } from './types';
 
 const useSessionStore = create<SessionStore>()(
 	persist(

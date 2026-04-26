@@ -1,6 +1,5 @@
 import { Checkbox as ArkCheckbox } from '@ark-ui/react';
 import { CheckIcon } from 'lucide-react';
-
 import { Control, Indicator, Root } from './styles';
 
 type CheckboxProps = {

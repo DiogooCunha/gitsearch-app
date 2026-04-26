@@ -1,5 +1,4 @@
 import type { ComponentProps } from 'react';
-
 import styled from 'styled-components';
 
 type WrapperProps = {

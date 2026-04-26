@@ -1,8 +1,6 @@
-import type { MsgProps, ToasterProps } from '../model/types';
 import type { ReactElement } from 'react';
-
 import * as Toastify from 'react-toastify';
-
+import type { MsgProps, ToasterProps } from '../model/types';
 import { Root, Title } from './styles';
 
 const Msg = ({ title, message }: MsgProps): ReactElement => (

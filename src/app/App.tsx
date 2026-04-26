@@ -1,8 +1,6 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ToastContainer, Zoom } from 'react-toastify';
-
 import { GlobalStyles } from '~/shared';
-
+import { ToastContainer, Zoom } from 'react-toastify';
 import { AppRouter } from './providers';
 import { Sidebar } from '~widgets';
 import { AppLayout, MainContent } from '../shared/ui/layout/layout';
