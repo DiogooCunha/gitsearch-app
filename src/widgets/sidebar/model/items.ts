@@ -13,21 +13,21 @@ export const sidebarItems: SidebarItem[] = [
 	{
 		name: 'Home',
 		href: PATHS.HOME,
-		icon: House as ComponentType<SVGProps<SVGSVGElement>>,
+		icon: House,
 	},
 	{
 		name: 'Pull Request',
 		href: '#',
-		icon: GitPullRequest as ComponentType<SVGProps<SVGSVGElement>>,
+		icon: GitPullRequest,
 	},
 	{
 		name: 'Repositories',
 		href: '#',
-		icon: FolderOpen as ComponentType<SVGProps<SVGSVGElement>>,
+		icon: FolderOpen,
 	},
 	{
 		name: 'Issues',
 		href: '#',
-		icon: TriangleAlert as ComponentType<SVGProps<SVGSVGElement>>,
+		icon: TriangleAlert,
 	},
 ];
