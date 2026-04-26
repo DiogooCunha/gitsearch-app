@@ -4,6 +4,8 @@ import { ToastContainer, Zoom } from 'react-toastify';
 import { GlobalStyles } from '~/shared';
 
 import { AppRouter } from './providers';
+import { Sidebar } from '~widgets';
+import { AppLayout, MainContent } from '../shared/ui/layout/layout';
 
 const queryClient = new QueryClient();
 
@@ -13,9 +15,12 @@ function App() {
 			<QueryClientProvider client={queryClient}>
 				<ToastContainer transition={Zoom} limit={5} />
 				<GlobalStyles />
-				<div>
-					<AppRouter />
-				</div>
+				<AppLayout>
+					<Sidebar />
+					<MainContent>
+						<AppRouter />
+					</MainContent>
+				</AppLayout>
 			</QueryClientProvider>
 		</>
 	);

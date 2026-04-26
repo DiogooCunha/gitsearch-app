@@ -1,18 +1,11 @@
-import { Divider } from '~/shared';
+import type { ReactElement } from 'react';
+import SidebarItem from './sidebar-item';
 
-import { sidebarItems } from '../model/items';
-import { Title, Wrapper } from './styles';
-
-const Sidebar = () => {
+const Sidebar = (): ReactElement => {
 	return (
-		<Wrapper $open={true}>
-			<Title>Sidebar</Title>
-			<Divider />
-
-			{sidebarItems?.map((item, index) => (
-				<li key={item.name + index}>{item.name}</li>
-			))}
-		</Wrapper>
+		<div>
+			<SidebarItem />
+		</div>
 	);
 };
 

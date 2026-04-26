@@ -1,6 +1,7 @@
 import type { ComponentType, SVGProps } from 'react';
 
-import { Info } from 'lucide-react';
+import { House, GitPullRequest, FolderOpen, TriangleAlert } from 'lucide-react';
+import { PATHS } from '~/shared';
 
 export type SidebarItem = {
 	name: string;
@@ -10,8 +11,23 @@ export type SidebarItem = {
 
 export const sidebarItems: SidebarItem[] = [
 	{
-		name: 'tets',
+		name: 'Home',
+		href: PATHS.HOME,
+		icon: House as ComponentType<SVGProps<SVGSVGElement>>,
+	},
+	{
+		name: 'Pull Request',
 		href: '#',
-		icon: Info as ComponentType<SVGProps<SVGSVGElement>>,
+		icon: GitPullRequest as ComponentType<SVGProps<SVGSVGElement>>,
+	},
+	{
+		name: 'Repositories',
+		href: '#',
+		icon: FolderOpen as ComponentType<SVGProps<SVGSVGElement>>,
+	},
+	{
+		name: 'Issues',
+		href: '#',
+		icon: TriangleAlert as ComponentType<SVGProps<SVGSVGElement>>,
 	},
 ];
