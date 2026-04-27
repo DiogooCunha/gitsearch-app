@@ -15,6 +15,8 @@ export const Wrapper = styled.div<WrapperProps>(({ $open }) => ({
     left: 0,
     height: '100vh',
     zIndex: 100,
+    background: '#0D1117',
+    padding: '20px',
 }));
 
 type TitleProps = {
@@ -29,8 +31,8 @@ export const Title = styled.h1<TitleProps>(({ $fontColor }) => ({
 }));
 
 export const Li = styled.div({
-	marginTop: '20px',
-	marginLeft: '60px',
+	marginTop: '10px',
+	marginLeft: '10px',
 });
 
 export const NavLink = styled(RouterNavLink)({
