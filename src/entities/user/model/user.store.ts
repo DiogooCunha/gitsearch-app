@@ -1,7 +1,7 @@
-import { request } from '~/shared';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { initialUser, type UserStore } from './types';
+import { userApi } from '../api';
 
 // Toda entidade, se necessário, deve ter sua própria store,
 // estados globais devem ser tratados na sessionStore
@@ -13,29 +13,24 @@ const useUserStore = create<UserStore>()(
 			token: null,
 
 			isUserLoggedIn: (): boolean => {
-				return !!get().token?.accessToken;
+				return !!get().token?.access_token;
 			},
 
 			setToken: (token: string): void => {
 				set(() => ({
 					token: {
-						accessToken: token,
+						access_token: token,
 					},
 				}));
 			},
 
 			loginWithGithub: async (code: string): Promise<void> => {
-				try {
-					const res = await request.post(`/auth/github?code=${code}`);
-
-					set(() => ({
-						token: {
-							accessToken: res.data.access_token,
-						},
-					}));
-				} catch (error) {
-					throw error;
-				}
+				const token = await userApi.loginWithGithub(code);
+				set(() => ({
+					token: {
+						access_token: token.access_token,
+					},
+				}));
 			},
 		}),
 		// Nessa parte voçês vao botar as propriedades que precisam ser persistidas,

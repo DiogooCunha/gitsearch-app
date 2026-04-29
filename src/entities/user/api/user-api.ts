@@ -1,5 +1,6 @@
 import { request } from '~/shared';
 import type { createUserTodoBody, UserTodo } from '../model';
+import type { Token } from '../model/types';
 
 export const userApi = {
 	fetchFakeUser: async (id: string): Promise<UserTodo> => {
@@ -24,4 +25,13 @@ export const userApi = {
 			throw new Error('Errrororr');
 		}
 	},
+
+	loginWithGithub: async (code: string): Promise<Token> => {
+		try {
+			const res = await request.post(`/auth/github?code=${code}`);
+			return res.data;
+		} catch (error) {
+			throw error;
+		}
+	}
 };
