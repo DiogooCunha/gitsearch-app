@@ -27,11 +27,7 @@ export const userApi = {
 	},
 
 	loginWithGithub: async (code: string): Promise<Token> => {
-		try {
-			const res = await request.post(`/auth/github?code=${code}`);
-			return res.data;
-		} catch (error) {
-			throw error;
-		}
-	}
+		const res = await request.post(`/auth/github?code=${code}`);
+		return res.data;
+	},
 };

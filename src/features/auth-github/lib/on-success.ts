@@ -9,7 +9,7 @@ export const onAuthSuccess = async (response: OAuthResponse): Promise<void> => {
 	} catch (error: any) {
 		toaster({
 			title: 'Login',
-			message: `${error.message}`
-		})
+			message: `${error.message}`,
+		});
 	}
 };

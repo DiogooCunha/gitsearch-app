@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { initialUser, type UserStore } from './types';
 import { userApi } from '../api';
+import { initialUser, type UserStore } from './types';
 
 // Toda entidade, se necessário, deve ter sua própria store,
 // estados globais devem ser tratados na sessionStore
