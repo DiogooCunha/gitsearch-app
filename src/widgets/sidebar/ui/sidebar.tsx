@@ -7,7 +7,6 @@ const Sidebar = () => {
 		<Wrapper $open={true}>
 			<Title>Sidebar</Title>
 			<Divider />
-
 			{sidebarItems?.map((item, index) => (
 				<li key={item.name + index}>{item.name}</li>
 			))}

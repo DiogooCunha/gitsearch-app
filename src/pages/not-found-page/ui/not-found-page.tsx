@@ -1,4 +1,4 @@
-import { Button, PATHS, Typography } from '~/shared';
+import { Button, PATHS, t, Typography } from '~/shared';
 import { type ReactElement } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { GradientText, Wrapper } from './styles';
@@ -10,11 +10,11 @@ const NotFoundPage = (): ReactElement => {
 			<Typography tag='h1'>
 				<GradientText>404</GradientText>
 			</Typography>
-			<Typography tag='h1'>Opssss! Page Not Found</Typography>
+			<Typography tag='h1'>Opssss! {t('notFoundPage:pageNotFound')}</Typography>
 			<Typography tag='p'>
-				The page you were looking for doesn't exist
+				{t('notFoundPage:pageDoesntExist')}
 			</Typography>
-			<Button onClick={() => navigate(PATHS.HOME)}>Back to Home</Button>
+			<Button onClick={() => navigate(PATHS.HOME)}>{t('notFoundPage:backToHome')}</Button>
 		</Wrapper>
 	);
 };
