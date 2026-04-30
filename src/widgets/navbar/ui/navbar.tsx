@@ -7,9 +7,11 @@ const Navbar = () => {
       <Box
         display='flex'
         height='64px'
-        justifyContent='space-between'
         margin='0 38px'
-        alignItems='center'
+        sx={{
+            alignItems: 'center',
+            justifyContent: 'space-between',
+        }}
       >
         <Typography tag='h3'>GitSearch</Typography>
         <NavbarButtons />
