@@ -1,9 +1,14 @@
-const GithubIcon = () => {
+type GithubIconProps = {
+	width?: string;
+	height?: string;
+}
+
+const GithubIcon = ({ width, height }: GithubIconProps) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
-			width='16'
-			height='16'
+			width={width ?? '16'}
+			height={height ?? '16'}
 			fill='currentColor'
 			viewBox='0 0 16 16'
 		>
