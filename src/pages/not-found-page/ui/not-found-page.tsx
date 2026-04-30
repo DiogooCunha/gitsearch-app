@@ -11,10 +11,10 @@ const NotFoundPage = (): ReactElement => {
 				<GradientText>404</GradientText>
 			</Typography>
 			<Typography tag='h1'>Opssss! {t('notFoundPage:pageNotFound')}</Typography>
-			<Typography tag='p'>
-				{t('notFoundPage:pageDoesntExist')}
-			</Typography>
-			<Button onClick={() => navigate(PATHS.HOME)}>{t('notFoundPage:backToHome')}</Button>
+			<Typography tag='p'>{t('notFoundPage:pageDoesntExist')}</Typography>
+			<Button onClick={() => navigate(PATHS.HOME)}>
+				{t('notFoundPage:backToHome')}
+			</Button>
 		</Wrapper>
 	);
 };

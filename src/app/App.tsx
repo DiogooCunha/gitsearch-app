@@ -1,8 +1,8 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { GlobalStyles } from '~/shared';
+import { Navbar } from '~widgets';
 import { ToastContainer, Zoom } from 'react-toastify';
 import { AppRouter } from './providers';
-import { Navbar } from '~widgets';
 
 const queryClient = new QueryClient();
 

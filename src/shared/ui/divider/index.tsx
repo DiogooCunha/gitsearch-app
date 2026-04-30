@@ -8,7 +8,7 @@ type DividerProps = {
 const Divider = styled.hr<DividerProps>(({ $color }) => ({
 	border: 'none',
 	height: '1px',
-	backgroundColor: $color || '#ccc',
+	backgroundColor: $color || '#3E444C',
 	width: '100%',
 }));
 

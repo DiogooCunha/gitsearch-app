@@ -1,7 +1,7 @@
 type GithubIconProps = {
 	width?: string;
 	height?: string;
-}
+};
 
 const GithubIcon = ({ width, height }: GithubIconProps) => {
 	return (

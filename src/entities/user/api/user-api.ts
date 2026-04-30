@@ -1,11 +1,11 @@
+import { assert } from '@diogoocunha/asser-ts';
 import { request } from '~/shared';
 import type { createUserTodoBody, UserTodo } from '../model';
 import type { Token } from '../model/types';
-import { assert } from '@diogoocunha/asser-ts';
 
 export const userApi = {
 	fetchFakeUser: async (id: string): Promise<UserTodo> => {
-		assert.isString(id, "id should be a string");
+		assert.isString(id, 'id should be a string');
 
 		try {
 			const res = await request.get(
@@ -18,7 +18,7 @@ export const userApi = {
 	},
 
 	createUserTodo: async (body: createUserTodoBody): Promise<UserTodo> => {
-		assert.isObject(body, "body should be an object");
+		assert.isObject(body, 'body should be an object');
 
 		try {
 			const res = await request.post(
