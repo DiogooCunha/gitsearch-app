@@ -4,19 +4,19 @@ import type { ReactElement } from 'react';
 import { Navigate } from 'react-router-dom';
 
 type ProtectedRouteProps = {
-	childElement: ReactElement;
+  childElement: ReactElement;
 };
 
 const ProtectedRoute = ({
-	childElement,
+  childElement,
 }: ProtectedRouteProps): ReactElement => {
-	const isUserLoggedIn = useUserStore((state) => state.isUserLoggedIn());
+  const isUserLoggedIn = useUserStore((state) => state.isUserLoggedIn());
 
-	if (!isUserLoggedIn) {
-		return <Navigate to={PATHS.LOGIN} replace />;
-	}
+  if (!isUserLoggedIn) {
+    return <Navigate to={PATHS.LOGIN} replace />;
+  }
 
-	return childElement;
+  return childElement;
 };
 
 export default ProtectedRoute;

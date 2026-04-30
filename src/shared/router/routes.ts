@@ -1,5 +1,5 @@
 export enum PATHS {
-	LOGIN = '/login',
-	HOME = '/',
-	NOTFOUND = '/*',
+  LOGIN = '/login',
+  HOME = '/',
+  NOTFOUND = '/*',
 }

@@ -3,21 +3,21 @@ import { CheckIcon } from 'lucide-react';
 import { Control, Indicator, Root } from './styles';
 
 type CheckboxProps = {
-	onClick: () => void;
+  onClick: () => void;
 };
 
 const Checkbox = ({ onClick }: CheckboxProps) => {
-	return (
-		<Root>
-			<Control>
-				<Indicator onClick={onClick}>
-					<CheckIcon />
-				</Indicator>
-			</Control>
-			<ArkCheckbox.Label>Checkbox</ArkCheckbox.Label>
-			<ArkCheckbox.HiddenInput />
-		</Root>
-	);
+  return (
+    <Root>
+      <Control>
+        <Indicator onClick={onClick}>
+          <CheckIcon />
+        </Indicator>
+      </Control>
+      <ArkCheckbox.Label>Checkbox</ArkCheckbox.Label>
+      <ArkCheckbox.HiddenInput />
+    </Root>
+  );
 };
 
 export default Checkbox;
