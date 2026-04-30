@@ -10,10 +10,10 @@ if (!rootElement) throw new Error('Root not found');
 const root = createRoot(rootElement);
 
 root.render(
-	<React.StrictMode>
-		<BrowserRouter>
-			<HTMLHead />
-			<App />
-		</BrowserRouter>
-	</React.StrictMode>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <HTMLHead />
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
 );

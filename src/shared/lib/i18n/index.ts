@@ -4,13 +4,13 @@ import { enTranslations } from './dictionary/en';
 import { ptTranslations } from './dictionary/pt';
 
 i18n.use(initReactI18next).init({
-	debug: false,
-	fallbackLng: 'pt',
-	resources: {
-		pt: ptTranslations,
-		en: enTranslations,
-	},
-	lng: localStorage.getItem('lang') || 'pt',
+  debug: false,
+  fallbackLng: 'pt',
+  resources: {
+    pt: ptTranslations,
+    en: enTranslations,
+  },
+  lng: localStorage.getItem('lang') || 'pt',
 });
 
 export { i18n };
