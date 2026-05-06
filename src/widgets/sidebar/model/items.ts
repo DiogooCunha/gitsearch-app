@@ -1,16 +1,18 @@
-import { Info } from 'lucide-react';
+import { PATHS } from '~/shared';
+import { House } from 'lucide-react';
 import type { ComponentType, SVGProps } from 'react';
 
-export type SidebarItem = {
+export type SidebarItemType = {
   name: string;
   href: string;
   icon: ComponentType<SVGProps<SVGSVGElement>>;
 };
 
-export const sidebarItems: SidebarItem[] = [
+export const sidebarItems: SidebarItemType[] = [
   {
-    name: 'tets',
-    href: '#',
-    icon: Info as ComponentType<SVGProps<SVGSVGElement>>,
+    name: 'home',
+    href: PATHS.HOME,
+    icon: House as ComponentType<SVGProps<SVGSVGElement>>,
   },
+  // Adicionar as futuras páginas aqui
 ];
