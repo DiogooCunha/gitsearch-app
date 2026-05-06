@@ -1,14 +1,20 @@
-import { Divider } from '~/shared';
+import { useUserStore } from '~/entities';
+import type { ReactElement } from 'react';
 import { sidebarItems } from '../model/items';
-import { Title, Wrapper } from './styles';
+import SidebarItem from './sidebar-item';
+import { Wrapper } from './styles';
 
-const Sidebar = () => {
+const Sidebar = (): ReactElement | null => {
+  const isUserLoggedIn = useUserStore((state) => state.isUserLoggedIn());
+
+  if (!isUserLoggedIn) {
+    return null;
+  }
+
   return (
     <Wrapper $open={true}>
-      <Title>Sidebar</Title>
-      <Divider />
       {sidebarItems?.map((item, index) => (
-        <li key={item.name + index}>{item.name}</li>
+        <SidebarItem key={item.name + index} item={item} />
       ))}
     </Wrapper>
   );
